@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Pierre</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="./JS/script.js" defer></script>
+    <script src="./JS/imageSlider.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+                <a href="./index.html"><img src="./images/svg/logo.svg" alt="Logo der Webseite"></a>
+                <ul class="menu-wrapper">
+                    <li> <a class="nav-link" href="./index.html">Startseite</a></li>
+                    <li> <a class="nav-link" href="./uberuns.html">Über uns</a></li>
+                    <li> <a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+                    <li> <a class="nav-link" href="./speisekarte.html">Speisekarte</a></li>
+                    <li> <a class="nav-link" href="./blog.html">Blog</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+    </header>
+    <section class="hero-section speise">
+            <h1>Unsere <em>Speisekarte</em></h1>
+            <p class="hero-p">Im Café Pierre bringen wir die authentische französische Atmosphäre nach Wien. </p>
+    </section>
+    <section>
+        <div class="container">
+                <div class="wrapper slides text-center">
+                    <h2><em>Französische</em> Speisen in <em>Wien</em></h2>
+                    <p class="text-alone">
+                        Im Café Pierre sind wir mehr als nur ein Team – wir sind eine Familie. 
+                        Jeder von uns teilt die Leidenschaft für französische Kulinarik und 
+                        Gastfreundschaft. Zusammen schaffen wir eine warme, einladende Atmosphäre, 
+                        in der sich jeder Gast wie zu Hause fühlen kann. Kommen Sie vorbei und erleben 
+                        Sie die Herzlichkeit und den Zusammenhalt unseres Teams!
+                    </p>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="container slides">
+            <h2 class="margin-bottom">Galerie unserer <em>Speisen</em></h2>
+            <img class="slide" src="./images/imageSlider/meal1.png" alt="Meal one">
+            <img class="slide" src="./images/imageSlider/meal2.png" alt="Meal two">
+            <img class="slide" src="./images/imageSlider/meal3.png" alt="Meal three">
+            <img class="slide" src="./images/imageSlider/meal4.png" alt="Meal four">
+            <div id="points" class="points">
+            </div>
+            <div class="slider-buttons">
+                <button id="prevButton"> &#8678; </button>
+                <button id="playPauseButton">Play</button>
+                <button id="nextButton" > &#8680; </button>
+            </div>
+        </div>
+    </section>
+    <footer class="dark footer">
+        <nav class="footer-wrapper container">
+            <ul class="footer-links">
+                <li> <a href="#">Impressum</a></li>
+                <li> <a href="#">Datenschutz</a></li>
+                <li> <a href="#">Sitemap</a></li>
+            </ul>
+            <a href="./index.html"><img src="./images/svg/logo.svg" alt="Logo der Webseite"></a>
+            <ul class="footer-links">
+                <li> <a href="#">LinkedIn</a></li>
+                <li> <a href="#">Instagram</a></li>
+                <li> <a href="#">Facebook</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

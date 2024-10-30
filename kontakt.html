@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Pierre</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="./JS/script.js" defer></script>
+    <script src="./JS/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+                <a href="./index.html"><img src="./images/svg/logo.svg" alt="Logo der Webseite"></a>
+                <ul class="menu-wrapper">
+                    <li> <a class="nav-link" href="./index.html">Startseite</a></li>
+                    <li> <a class="nav-link" href="./uberuns.html">Über uns</a></li>
+                    <li> <a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+                    <li> <a class="nav-link" href="./speisekarte.html">Speisekarte</a></li>
+                    <li> <a class="nav-link" href="./blog.html">Blog</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <div class="container">
+                <div class="wrapper">
+                    <h1 class="small-headline">So finden <em>Sie</em> uns</h2>
+                    <p class="text-alone">
+                        Im Café Pierre sind wir mehr als nur ein Team – wir sind eine Familie. 
+                        Jeder von uns teilt die Leidenschaft für französische Kulinarik und 
+                        Gastfreundschaft. Zusammen schaffen wir eine warme, einladende Atmosphäre, 
+                        in der sich jeder Gast wie zu Hause fühlen kann. Kommen Sie vorbei und erleben 
+                        Sie die Herzlichkeit und den Zusammenhalt unseres Teams!
+                    </p>
+                </div>
+        </div>
+    </section>
+    <img class="map" src="./images/map.jpg" alt="Eine Karte mit einer Stecknadel die den Ort unseres Cafés kennzeichnet" width="100%">
+    <section id="Tischreservierung" class="nopadding">
+        <div class="container contact-data-section">
+            <h2 class="small-headline">Unsere <em>Kontakt</em>informationen</h2>
+            <ul class="contact-data">
+                <li><img src="./images/svg/anruf.svg" alt="Anruf-icon"> <em class="contact-title">Telefon</em> 06509907765</li>
+                <li><img src="./images/svg/email.svg" alt="Email-icon"> <em class="contact-title">E-mail</em> kontakt@cafepierre.at</li>
+                <li><img src="./images/svg/standort.svg" alt="Standort-icon"> <em class="contact-title">Standort</em> Gumpendorfer Str. 74, 1060 Wien</li>
+            </ul>
+            <h3 class="small-headline"><em>Öffnungs</em>zeiten</h3>
+            <ul class="opening-times">
+                <li><div><em class="contact-title">Montag - Donnerstag</em></div> <div>8:00 - 22:00</div></li>
+                <li><div><em class="contact-title">Freitag - Sonntag</em></div> <div>8:00 - 23:00</div></li>
+            </ul>
+            <div class="cta-section"><button onclick="window.location.href='tel:06509907765'">Anrufen</button><button onclick="window.location.href='mailto:kontakt@cafepierre.at?subject=Anfrage'" >Mail verfassen</button></div>
+            <p class="small-headline font-marcellus hero-p text-align-center">Tischreservierung per <em>Telefon</em> oder <em>Mail</em></p>
+        </div>
+    </section>
+    <section class="form-section">
+        <form id="contactForm" class="form container-form" action="submit" method="post" novalidate>
+            <h2 class="small-headline">
+                <em>Kontakt</em>formular
+            </h2>
+            <div>
+                <label for="anrede">Anrede:</label>
+                <select id="anrede" name="anrede" required>
+                    <option value="">Bitte wählen</option>
+                    <option value="Herr">Herr</option>
+                    <option value="Frau">Frau</option>
+                </select>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="vorname">Vorname:</label>
+                <input class="input" type="text" id="vorname" name="vorname" required>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="nachname">Nachname:</label>
+                <input class="input" type="text" id="nachname" name="nachname" required>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="adresse">Adresse:</label>
+                <input class="input" type="text" id="adresse" name="adresse" required>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="plz">Postleitzahl:</label>
+                <input class="input" type="text" id="plz" name="plz" required>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="ort">Ort:</label>
+                <input class="input" type="text" id="ort" name="ort" required>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="email">E-Mail-Adresse:</label>
+                <input class="input" type="email" id="email" name="email" required>
+                <span class="error"></span>
+            </div>
+            <div>
+                <label for="nachricht">Nachricht:</label>
+                <textarea class="input" id="nachricht" name="nachricht" rows="5" cols="33" required></textarea>
+                <span class="error"></span>
+            </div>
+            <div>
+                <button type="submit">Absenden</button>
+            </div>
+        </form>
+    </section>
+    <footer class="dark footer">
+        <nav class="footer-wrapper container">
+            <ul class="footer-links">
+                <li> <a href="#">Impressum</a></li>
+                <li> <a href="#">Datenschutz</a></li>
+                <li> <a href="#">Sitemap</a></li>
+            </ul>
+            <a href="./index.html"><img src="./images/svg/logo.svg" alt="Logo der Webseite"></a>
+            <ul class="footer-links">
+                <li> <a href="#">LinkedIn</a></li>
+                <li> <a href="#">Instagram</a></li>
+                <li> <a href="#">Facebook</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+
+</body>
