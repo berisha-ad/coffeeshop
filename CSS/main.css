@@ -229,6 +229,9 @@ em {
   .hero-p {
     font-size: 1.3rem;
   }
+  .hero-p-blog {
+    max-width: 70%;
+  }
 
   .uberuns {
     background: linear-gradient(
@@ -280,8 +283,7 @@ section:not(.hero-section, .form-section) {
     display: flex;
     color: #fff;
     align-items: center;
-    justify-content: center;
-    gap: 20rem;
+    justify-content: space-between;
 }
 
 .footer {
@@ -748,6 +750,7 @@ section:not(.hero-section, .form-section) {
     .footer-wrapper {
         flex-direction: column;
         gap: 3rem;
+        justify-content: center;
     }
 
     .footer-wrapper li {
@@ -787,4 +790,7 @@ section:not(.hero-section, .form-section) {
     .hero-p {
         font-size: 1.1rem;
       }
+    .hero-p-blog {
+        max-width: none;
+    }  
 }
