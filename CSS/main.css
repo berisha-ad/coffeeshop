@@ -489,6 +489,15 @@ section:not(.hero-section, .form-section) {
     border-color: red;
 }
 
+.valid {
+    border-color: rgb(0, 255, 0);
+    color: green;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Blog */
 
 .blog-grid {

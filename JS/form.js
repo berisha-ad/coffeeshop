@@ -45,11 +45,13 @@ function validateField(input) {
 
     if (errorMessage) {
         errorSpan.textContent = errorMessage;
+        input.classList.remove("valid");
         input.classList.add("invalid");
         return false; 
     } else {
         errorSpan.textContent = "";
         input.classList.remove("invalid");
+        input.classList.add("valid");
         return true; 
     }
 }
